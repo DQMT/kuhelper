@@ -2,16 +2,23 @@
     "manifest_version": 2,
     "name": "kuhelper",
     "version": "1.0",
-    "description": "ku岛助手",
+    "description": "ku岛助手:zz管理器",
+    "browser_action": {
+        "default_title": "ku岛助手",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": [
+            "js/background.js"
+        ]
+    },
     "content_scripts": [
         {
             "matches": ["*://www.kukuku.cc/*"],
             "js": ["js/jquery.js","js/kuhelper.js"]
         }
     ],
-	"background": {
-        "scripts": [
-            "js/background.js"
-        ]
-    }
+    "permissions":[
+        "storage"
+    ]
 }
