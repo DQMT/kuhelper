@@ -1,5 +1,5 @@
 $(function(){
-    var table = '<table><caption>zz管理</caption><tr><th>屏蔽时间</th><th>zz的id</th><th>操作</th></tr>';
+    var table = '<table><caption>ku岛zz管理器</caption><tr><th>屏蔽时间</th><th>zz的id</th><th>操作</th></tr>';
     var zzlist;
     if(localStorage.getItem("zz")==null){
 		zzlist = [];
